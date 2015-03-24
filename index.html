@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background: #ccc;
+}
+
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  text-align: left;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 15px;
+  border-bottom: 1px solid #888;
+  transition: .3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #aaa;
+  color: #444;
+  cursor: default;
+}
+
+/* Sub Menus */
+.nav li li {
+  font-size: .8em;
+}
+
+/*******************************************
+   Style menu for larger screens
+
+   Using 650px (130px each * 5 items), but ems
+   or other values could be used depending on other factors
+********************************************/
+
+@media screen and (min-width: 650px) {
+  .nav li {
+    width: 130px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  .nav a {
+    border-bottom: none;
+  }
+
+  .nav > ul > li {
+    text-align: center;
+  }
+
+  .nav > ul > li > a {
+    padding-left: 0;
+  }
+
+  /* Sub Menus */
+  .nav li ul {
+    position: absolute;
+    display: none;
+    width: inherit;
+  }
+
+  .nav li:hover ul {
+    display: block;
+  }
+
+  .nav li ul li {
+    display: block;
+  }
+}
+
+#me-jumping-pic {
+text-align:right;
+padding:15px}
+
+#welcome-h2 {
+position:absolute;
+left:340px;
+top:140px;
+font-family:sans-serif;}
+
+#welcome-p {
+position:absolute;
+left:340px;
+top:190px;
+font-family:sans-serif;}
+
+#drone-vid {
+position:absolute;
+Left:100px;
+border: 5px ridge olive;}
+
+body {
+font-family:sans-serif;}
+
+#drone-vid-exp {
+position:absolute;
+top:390px;
+left:140px;}
+
+#coming-soon {
+position:absolute;
+left:1000px;
+bottom:-500px;}
+</style>
+
+
+<!-- http://css-snippets.com/drop-down-navigation --> 
+<body class="news">
+  <header>
+    <div class="nav">
+      <ul>
+        <li class="home"><a href="#">Home</a></li>
+        
+          <li class="home"><a href="#">About</a></li>
+        
+        <li class="news"><a href="#">More</a>
+          <ul>
+            <li><a href="http://tdaug7.github.io/mtb-ca/">MTB CA</a></li>
+<li><a href="#">Coming Soon</a></li>
+            <li><a href="#">Coming Soon</a></li>
+            <li><a href="#">Coming Soon</a></li>
+  <li><a href="#">Coming Soon</a></li>        
+</ul>
+        </li>
+        
+      </ul>
+    </div>
+  </header>
+<h2 id="welcome-h2">Welcome to my website!</h2>
+
+<p id="welcome-p">Almost anything I do outdoors will be on here! <br>Check back often for new pictures and videos <br>of mountain biking and many other outdoor action!</p>
+
+<div id="me-jumping-pic"><img id="me-jumping-img" class="imgs" src="http://i62.tinypic.com/mkz05x.png" height="350"></div>
+
+
+<p id="drone-vid-exp">Here is a video taken just a few days ago with a friend&#39;s drone</p>
+
+<iframe id="drone-vid" width="560" height="315" src="https://www.youtube-nocookie.com/embed/CoR3hxdGGkk" frameborder="0" allowfullscreen></iframe>
+
+<div id="coming-soon"><h3>Coming Soon:</h3> <ul>
+<li>Videos from Yerington</li>
+</ul></div>
+
+
+</body>
+</html>
+
+
